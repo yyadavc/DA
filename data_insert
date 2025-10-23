@@ -1,1 +1,25 @@
+### customer table 
 
+select * from [dbo].[Sales_Customer]
+
+BULK INSERT [dbo].[Sales_Customer]
+FROM 'C:\Users\yyadav\OneDrive - Calix, Inc\Desktop\Work\Learnings\Data analyst\_b18be6ecdf2d4797b0a5860509c679c7_sales_customers.csv'
+WITH 
+(
+	FORMAT ='CSV',
+	FIRSTROW = 2
+)
+GO
+
+### Date Table
+
+select * from [dbo].[Date]
+
+BULK INSERT [dbo].[Date]
+FROM 'C:\Users\yyadav\OneDrive - Calix, Inc\Desktop\Work\Learnings\Data analyst\_b18be6ecdf2d4797b0a5860509c679c7_sales_customers.csv'
+WITH 
+(
+	FORMAT ='CSV',
+	FIRSTROW = 2
+)
+GO
