@@ -23,3 +23,15 @@ WITH
 	FIRSTROW = 2
 )
 GO
+
+###Market table
+
+select * from [dbo].[Sales_Markets]
+
+BULK INSERT [dbo].[Sales_Markets]
+FROM 'C:\Users\yyadav\OneDrive - Calix, Inc\Desktop\Work\Learnings\Data analyst\_4f5ccf3350904b9496f004373f5337a1_sales_markets.csv'
+WITH 
+(
+	FORMAT ='CSV',
+	FIRSTROW = 2
+)
