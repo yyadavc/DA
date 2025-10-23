@@ -1,3 +1,6 @@
+
+
+
 ### customer table 
 
 select * from [dbo].[Sales_Customer]
@@ -35,3 +38,21 @@ WITH
 	FORMAT ='CSV',
 	FIRSTROW = 2
 )
+
+
+
+## Transction table
+select * from [dbo].[sales_transction]
+
+
+alter table [dbo].[sales_transction]
+add Currency varchar(50)
+
+BULK INSERT [dbo].[sales_transction]
+FROM 'C:\Users\yyadav\OneDrive - Calix, Inc\Desktop\Work\Learnings\Data analyst\_1f0fcdcefeff421e9e330fc1296edf21_sales_transactions.csv'
+WITH 
+(
+	FORMAT ='CSV',
+	FIRSTROW = 2
+)
+GO
